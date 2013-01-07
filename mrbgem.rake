@@ -13,7 +13,7 @@ MRuby::Gem::Specification.new('mrbgems-example') do |spec|
   spec.objs << ["#{build_dir}/generated.o"]
   # spec.test_rbfiles = Dir.glob("#{dir}/test/*.rb")
   # spec.test_objs = Dir.glob("#{dir}/test/*.{c,cpp,m,asm,S}").map { |f| f.relative_path_from(dir).pathmap("#{build_dir}/%X.o") }
-  # spec.test_preload = 'test/assert.rb'
+  spec.test_preload = "#{dir}/test/assert2.rb"
 
   # rules
   generated_file = "#{build_dir}/generated.c"
