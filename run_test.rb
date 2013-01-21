@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby
+#
+# mrbgems test runner
+# 
 
 if __FILE__ == $PROGRAM_NAME
   require 'fileutils'
