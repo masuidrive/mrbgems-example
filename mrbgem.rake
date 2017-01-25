@@ -4,6 +4,7 @@ MRuby::Gem::Specification.new('mrbgems-example') do |spec|
 
   spec.objs << ["#{build_dir}/generated.o"]
   spec.test_preload = "#{dir}/test/assert2.rb"
+  spec.add_test_dependency('mruby-print', :core => 'mruby-print')
 
   # rules
   generated_file = "#{build_dir}/generated.c"
